@@ -115,7 +115,7 @@ resource "aviatrix_transit_gateway" "oci_transit_gw" {
   cloud_type          = 16
   account_name        = "OCIAccess"
   gw_name             = "OCItransitGW"
-  vpc_id              = aviatrix_vpc.oci_vgw_conn_vnet.vpc_id
+  vpc_id              = aviatrix_vpc.oci_vgw_conn_vnet.name
   vpc_reg             = aviatrix_vpc.oci_vgw_conn_vnet.region
   gw_size             = "VM.Standard2.2"
   subnet              = aviatrix_vpc.oci_vgw_conn_vnet.subnets.0.cidr

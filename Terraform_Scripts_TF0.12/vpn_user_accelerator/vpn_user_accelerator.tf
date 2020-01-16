@@ -16,7 +16,7 @@
 
 
 resource "aviatrix_vpn_user_accelerator" "test_vpn_user_accel" {
-  elb_name        = "elb-for-vpn-user-accel"
+  elb_name        = "elb-vpn-user-accel"
 
   # depends_on      = ["aviatrix_gateway.vpn_gw_for_elb"]
 }
